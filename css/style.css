@@ -1,0 +1,565 @@
+:root{
+    --Roboto-font:font-family: "Roboto", sans-serif;
+    --Open-Sans:font-family: "Open Sans", sans-serif;
+    --primary: #0463FA;
+}
+
+.navbar-brand {
+    font-style: var(--Roboto-font);
+    font-weight: 700;
+    font-size: 45px  ;
+}
+.navbar-nav{
+    font-style: var(--Open-Sans);
+    font-weight: 500;
+    
+}
+.navbar{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.navbar-nav a:hover {
+    color: var(--primary) !important;
+}
+.navbar-nav a{
+    margin-inline: 5px;
+}
+.dropdown-toggle::after{
+    display: none;
+}
+.dropdown-toggle i[class="fa-solid fa-chevron-down "]{
+    width:5px;
+}
+.dropdown-menu.show {
+    display: block;
+    outline: none;
+    border: none;
+}
+
+.nav-address{
+    background-color: #eff5ff;
+    color: #8D8E92;
+}
+.nav-address svg{
+    color: var(--primary);
+}
+.navbar-toggler{
+    outline: none;
+}
+.navbar-toggler-icon{
+background-image: url(../images/download.svg);
+}
+.nav-item.text-bg-primary{
+    background-color: var(--primary);
+    color: white;
+    padding: 15px 24px ;
+}
+.nav-item.text-bg-primary a{
+    color: white;
+    font-style: var(--Open-Sans);
+    font-weight: 600;
+    font-size: 18px;
+}
+.nav-item a{
+    font-weight: 400;
+    color: #1b2c51;
+}
+.media-icons p{
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.landing .text h1{
+    font-style:var(--Roboto-font) ;
+    font-weight: 700;
+}
+.landing .carousel-caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 100%;
+}
+.landing .carousel-caption h1{
+    font-weight: 700 !important;
+}
+.Medical-Stuff {
+    display: flex;
+    justify-content: space-between;
+}
+.Medical-Stuff div{
+    padding-inline: 20px;
+    border-left: 2px solid white;
+}
+.Medical-Stuff div h3{
+    color: white;
+}
+.Medical-Stuff div p{
+    font-size:20px;
+    color: white;
+}
+
+.about{
+    padding-top:100px ;
+    /* max-width: 100%; */
+}
+.about-images img{
+    border-radius:8px;
+    max-width: 100%;
+}
+.about-images img[src="images/about-1.jpg"]{
+    transform:translateX(5% )
+}
+.about-images img[src="images/about-2.jpg"]{
+transform:translate(-30% ,-40%)
+}
+.about-info h2 {
+font-weight:700 ;
+color: #1b2c51;
+}
+.about-info p {
+/* font-weight:700 ; */
+color: #8d8e92;
+font-size: 18px;
+}
+.about-info svg {
+margin-right: 10px;
+color: var(--primary);
+}
+.about-info .read-more{
+    font-weight: 500;
+}
+
+.features-img{
+    max-height:600px;
+}
+.features-info .btn:hover{
+    background-color: transparent;
+}
+.features-info h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin-block:0 20px;
+}
+.features-info p{
+    font-size: 18px;
+    margin-block:10px
+    /* font-weight: 700; */
+}
+.skills .Experience .icon{
+    background-color: white;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 10px;
+} 
+.skills .Experience .icon svg{
+    color:var(--primary)
+}
+.skills .Experience .text{
+    color: white;
+}
+.service .row{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 1.5rem;
+} 
+.service .row .card{
+    background-color: #eff5ff;
+    grid-column:span 4 ;
+    padding: 3rem;
+    border: none;
+    border-radius:10px ;
+    transition:all .5s ease;
+}
+.service .row .card .icon {
+    background-color: white;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.service .row .card .icon svg {
+    color: var(--primary);
+    font-size: 26px ;
+}
+.service h2{
+    color: #1b2c51;
+}
+.service h3{
+    color: #1b2c51;
+    font-size: 23px;
+    font-weight: bold;
+    margin-block:0 20px;
+}
+
+.service .row .card p {
+color: #8d8e92;
+}
+.service .row .card a {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 20px;
+    transition: width .6s ease;
+    color:#8d8e92;
+    font-size:17px;
+}
+.service .row .card:hover  {
+    transform: translateY(-10px);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.service .row .card:hover a {
+    width: 50% ;
+    overflow: visible;
+}
+.service .row .card a svg {
+    margin-right: 20px;
+    color: var(--primary);
+}
+.team .container h2{
+    color: #1b2c51;
+}
+.team .container .row{
+    margin: 0 auto;
+}
+.team .container .card{
+    background-color: #eff5ff;
+    border-radius: 30px ;
+    transition: all .5s ease;
+    max-width: 100%;
+}
+.team .row .card .img-card{
+    border-radius: 8px;
+    transition: all .5s ease;
+}
+.team .row .card{
+    height: 420px;
+    transition: height .6s ease;
+    width: calc(100% / 4 -20px);
+    margin-inline: 10px ;
+}
+.team .row .card h5{
+font-weight: 700;
+color: #1b2c51;
+}
+.team .row .card:hover .img-card img {
+    transform: translatey(-30px);
+    transition: transform .6s ease;
+    border-radius: 8px;
+}
+.team .row .card:hover span {
+    display: flex !important;
+}
+.team .row .card span p:hover {
+    background-color: var(--primary);
+    transition: .6s;
+}
+.team .row .card span svg{
+    color: var(--primary);
+    transition: .6s;
+}
+
+.team .row .card span p:hover svg{
+    color: white;
+}
+.team .row .card-body{
+    transform: translatey(-10px);
+    padding-block:30px ;
+    height: 25% !important;
+    overflow: hidden;
+    transition: height .4s ease-in-out;
+}
+.team .row .card:hover .card-body{
+    height: 40% !important ;
+}
+
+.Appointment-form {
+border-radius: 10px;
+}
+.Appointment-info .call-us .icon{
+    background-color: white;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.Appointment-info .call-us .icon svg{
+color:var(--primary);
+}
+.Appointment-form form input{
+    border: none;
+    padding: 18px;
+    border-radius: 7px;
+    width: calc(50% - 20px);
+    margin-inline: 10px;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #8D8E92;
+} 
+.Appointment-form form textarea{
+    border: none;
+    padding:10px 0px 10px 10px ;
+    padding-right: 0 ;
+    margin-inline: auto;
+    border-radius: 7px;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #8D8E92;
+} 
+.Testimonial .carousel-item img {
+    border: #0463FA 10px solid;
+    border-radius: 50%;
+}
+footer{
+    background-color: #1b2c51;
+    padding-top:4rem ;
+}
+footer .address h3,.address p,.address span p{
+    color:white;
+}
+.address span p {
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 10px;
+    border: 1px solid white;
+    transition: background-color .5s ease;
+}
+.address span p:hover {
+    background-color: white;
+}
+.address span p:hover svg {
+    color: var(--primary);
+}
+footer .services h3,.services p,.services span p{
+    color:white;
+}
+.services  p {
+    transition: all .5s ease;
+    cursor: pointer;
+}
+.services  p svg {
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 5px;
+
+}
+.services  p:hover,.services  p:hover svg {
+    color: var(--primary);
+    letter-spacing: 1px;
+}
+.newsletter h3{
+   margin-top: 0;
+   color:white;
+}
+.newsletter p{
+   color:white;
+}
+footer form input{
+   background-color: transparent;
+   border:none;
+   outline: none;
+}
+footer form{
+    background-color: white;
+    padding: 5px 5px;
+    border-radius: 10px ;
+    width: fit-content;
+}
+footer form a{
+    background-color: var(--primary);
+    padding:10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+}
+footer form a:hover{
+    color: white;
+}
+footer .copyright{
+    padding-top: 10px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+footer .copyright p{
+color:white;
+}
+footer .copyright a{
+color:white;
+transition: .5s;
+}
+footer .copyright a:hover{
+color:var(--primary)
+}
+.arrow-up{
+    background-color: var(--primary);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    right: 5%;
+    top:85%;
+    bottom:0; 
+} 
+.arrow-up svg{
+    color: white;
+}
+
+
+
+@media (min-width:1200px){
+
+    .landing .row  h1{
+        font-style:var(--Roboto-font) ;
+        font-size: 56px ;
+        font-weight: 700;
+    }
+    .Medical-Stuff div h3{
+        color: white;
+        font-size: 40px;
+    }
+    .features-info{
+        padding-left: 100px !important;
+        padding-top: 100px !important;
+    }
+    .features-img{
+        padding: 0 !important;
+    }
+    .service .row .card:hover a {
+        width: 70% !important;
+        overflow: visible;
+    }
+    .Appointment-form form textarea{
+        max-width: calc(100% - 24px) !important;
+    } 
+}
+@media (min-width: 992px){
+    .features-info{
+            padding-left: 100px;
+            padding-top: 50px ;
+        }
+        .features-img{
+            padding: 0 !important;
+        }
+        .service .row .card:hover a {
+            width: 60% !important;
+            overflow: visible;
+        }
+
+    }
+    
+
+
+
+
+    @media (max-width:991px){
+        .nav-address{
+            display: none;
+        }
+        .nav-item.text-bg-primary{
+            display: none;
+        }
+        .main-navbar {
+            padding:5px 0 ;
+        }
+        .main-navbar .container-fluid{
+            padding: 0 12px ;
+        }
+        .landing .row{
+            display:flex; 
+            flex-direction:  column-reverse ;
+            justify-content: space-between;
+        }
+        .landing .row .Medical-Stuff div{
+            grid-column: span 12;
+            margin-top: 20px;
+        }
+        .service .row .card{
+            background-color: #eff5ff;
+            grid-column:span 6 ;
+        }
+        
+        @media (max-width:1200px){
+            .Appointment-form form textarea{
+                max-width: calc(100% - 24px) !important;
+            } 
+        }
+        
+    }
+        @media (min-width:768px){
+            .features-info{
+                padding: 0 ;
+            }    
+            .features-img{
+                padding: 1.5rem ;
+            }
+            .service .row .card:hover a {
+                width: 50% !important;
+                overflow: visible;
+            }
+            .Appointment-form form textarea{
+                width: 100% !important;
+            } 
+            
+        }
+        @media (max-width:767px){
+            .service .row{
+                margin: 0 auto;
+            }
+            .service .row div{
+                background-color: #eff5ff;
+                grid-column:span 12 !important;
+            }
+            .service .row .card:hover a {
+                width: 70% ;
+                overflow: visible;
+            }
+            .Appointment-form form input{
+                width: 100%;
+            } 
+            .Appointment-form form textarea{
+                width: 100% !important;
+            } 
+            .Appointment-form form div{
+                width: 100%;
+            }
+            .Appointment-form form div .form-select{
+                max-width: 492px !important;
+            margin: 6px 10px 0;
+            }
+            
+            .Appointment-form form textarea{
+                max-width: 100% !important;
+            } 
+        }
+
+        @media (min-width: 576px){
+            .features-info{
+                padding: 0 ;
+            }    
+            .service .row .card:hover a {
+                width: 40% ;
+                overflow: visible;
+            }
+            .Appointment-form form textarea{
+                width: 100% !important;
+            } 
+            
+            }
+            
